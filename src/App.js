@@ -1,25 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import CodeEditor from "./components/CodeEditor"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+return(
+<div className='bg-black w-full min-h-screen text-gray-200 px-6 py-4'>
+  <CodeEditor />  
+</div>
+);
 }
 
 export default App;
